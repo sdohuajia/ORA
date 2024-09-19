@@ -1,4 +1,4 @@
 # ORA
 
 
-wget -O Hemi.sh https://raw.githubusercontent.com/sdohuajia/Hemi/main/Hemi.sh && sed -i 's/\r$//' Hemi.sh && chmod +x Hemi.sh && ./Hemi.sh
+wget -O ORA.sh https://raw.githubusercontent.com/sdohuajia/ORA/main/ORA.sh && sed -i 's/\r$//' ORA.sh && chmod +x ORA.sh && ./ORA.sh
