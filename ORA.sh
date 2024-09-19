@@ -100,7 +100,9 @@ deploy_environment() {
 
     # 将用户添加到 Docker 组
     echo "配置 Docker 用户组..."
-    sudo groupadd docker
+    if ! getent group docker > /dev/null; then
+        sudo groupadd docker
+    fi
     sudo usermod -aG docker $USER
     newgrp docker
 
